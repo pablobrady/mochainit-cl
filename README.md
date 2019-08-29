@@ -1,31 +1,22 @@
-# JS Toy Problem w/ Mocha
+## Fibonacci Sequence - JS Toy Problem
+
+**The Fibonacci Sequence is the series of numbers:**
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811
+##### [> More about the Fibonacci sequence](https://www.mathsisfun.com/numbers/fibonacci-sequence.html)
+
+## 
 
 --
-### MOCHA INSTALLATION
-Install as a development dependency for your project:
+### CODE TESTING:
 
-$ npm install --save-dev mocha
+```npm test``` 
 
-(As of Mocha v6.0.0, Mocha requires Node.js v6.0.0 or newer.)
+or
 
-https://mochajs.org/#installation
+```mocha ./node_modules/mocha/bin/mocha```
 
 
---
-
-#### Install Insertion Library (Chai in this case)
-npm i --save-dev chai
-
----
-#### Start COMMAND LINE Testing / Problem Solving
-```npm test```
-
----
-##### NPM COMMANDS:
-
-```npm test```
-
-```mocha``` (or './node_modules/mocha/bin/mocha')
 
 ---
 #### REFERENCE:
