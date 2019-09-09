@@ -5,32 +5,31 @@ module.exports = function() {
   // Convert arguments object to an array
   var args = Array.prototype.slice.call(arguments);
 
-  // // Throw error if arguments contain non-finite number values
+  // Arguments should contain (finite) number values
   // if (!args.every(Number.isFinite)) {
-  //   throw new TypeError('sum() expects only numbers.')
+  //   throw new TypeError('Expecting only numbers.')
   // }
 
-  // Return the solution output
+  // Debugging assistance
+  var sleep = function (milliseconds) {
+    var start = new Date().getTime();
+    for (var i = 0; i < 1e7; i++) {
+      if ((new Date().getTime() - start) > milliseconds){
+        break;
+      }
+    }
+  }
+
+  // Use the "solution(xx)" function to return data for testing.
   var solution = function (input) {
     const MAX_IDX = input;
-    var outputArray = []; 
-
-    console.log("Number of items requested = " + MAX_IDX)
-
-    var fibProcess = function(tempArray, idx) {
-      if(idx==0) { return 0; }
-      if(idx==1 || idx==2) { return 1; }
-      return tempArray[idx - 2] + tempArray[idx - 1]
-    }
-
-    var outputArray = [];
-    for(index=0; index<MAX_IDX; index++) {
-      outputArray[index] = fibProcess(outputArray, index)
-      console.log(index + " " + outputArray[index])
-    }
+    var outputArray = [-1, input]; 
 
     return outputArray
   }
 
-  return solution(args)
+  var retVal = solution(args);
+
+
+  return retVal;
 }
