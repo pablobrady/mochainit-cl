@@ -28,8 +28,5 @@ module.exports = function() {
     return outputArray
   }
 
-  var retVal = solution(args);
-
-
-  return retVal;
+  return solution(args[0]);
 }
